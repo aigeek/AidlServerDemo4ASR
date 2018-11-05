@@ -1,0 +1,12 @@
+// IPropertiesCallback.aidl
+package com.tcl.asr.aidl;
+
+// Declare any non-default types here with import statements
+
+interface IPropertiesCallback {
+    /**
+     * Demonstrates some basic types that you can use as parameters
+     * and return values in AIDL.
+     */
+    boolean onPropertiesSet(String key,  String value);
+}

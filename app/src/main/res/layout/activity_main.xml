@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/hello_world" />
+    
+    	    <TextView
+        android:id="@+id/wifiInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text=" "
+        android:textSize="10dip"
+        android:textColor="#ff0000"
+         />
+    <Button
+        android:id="@+id/btn_putong"
+        android:layout_below="@id/wifiInfo"
+        android:text="设置属性 方言：普通话"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_sicuan"
+        android:layout_below="@id/btn_putong"
+        android:text="设置属性 方言：四川话"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_henan"
+        android:layout_below="@id/btn_sicuan"
+        android:text="设置属性 方言：河南话"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_guangdong"
+        android:layout_below="@id/btn_henan"
+        android:text="设置属性 方言：广东话"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_dogbei"
+        android:layout_below="@id/btn_guangdong"
+        android:text="设置属性 方言：东北话"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
