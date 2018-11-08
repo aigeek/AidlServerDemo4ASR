@@ -139,6 +139,16 @@ public class rcUiService extends Service{
 		  }
 
 		@Override
+		public int getDialects() throws RemoteException {
+			return 0;
+		}
+
+		@Override
+		public void onResult(String s) throws RemoteException {
+
+		}
+
+		@Override
 		public void registerPropertiesCallback(IPropertiesCallback cb) throws RemoteException {
 		 	Log.i(TAG,"registerPropertiesCallback");
 		 	if (cb != null){
@@ -152,6 +162,11 @@ public class rcUiService extends Service{
 			if (cb != null){
 				mCallbackList.unregister(cb);
 			}
+		}
+
+		@Override
+		public void onShortClick() throws RemoteException {
+
 		}
 
 

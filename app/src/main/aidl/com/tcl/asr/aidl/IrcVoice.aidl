@@ -13,6 +13,9 @@ import com.tcl.asr.aidl.IPropertiesCallback;
     	  void onShowMiddleText(String s);
     	  void onShowErrorText(String s) ;
     	  boolean setDialects(int type);
+    	  int getDialects();
+    	  void onResult(String s);
     	  void registerPropertiesCallback(IPropertiesCallback cb);
     	  void unRegisterPropertiesCallback(IPropertiesCallback cb);
+          void onShortClick();
 	}
